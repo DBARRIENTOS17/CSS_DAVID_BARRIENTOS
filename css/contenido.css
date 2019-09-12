@@ -1,0 +1,123 @@
+section a img:hover
+{	
+	transition-duration: 2s;
+}
+
+/*Desktop*/
+@media screen and (min-width: 900px) 
+{  
+
+	#central
+		{
+			background-color: #82c3a6;	
+			text-align: center;	
+		}
+
+	#central img 
+		{	
+			width: 85%;
+			height: 400px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+	#secundaria
+		{
+			font-size: 80%;
+			background-color: #d5c75f;
+			border: 1px 1px 1px 1px;	
+			display: flex;
+			flex-direction: row;	
+		}
+
+	#secundaria nav
+		{
+			text-align: center;	
+			display: grid;
+		}
+
+	#secundaria a img
+		{
+			width: 80%;
+			margin-top: 20px;	
+			box-shadow: 2px 2px #82c3a6;			
+		}
+
+	#secundaria .paisaje img:hover
+		{
+			-webkit-transform: rotate(10deg); 			
+		}
+
+	#secundaria .retratos img:hover
+		{
+			-webkit-transform: translate(20px, -5px);
+		}
+
+
+	#secundaria nav a:link, #secundaria nav a:visited 
+		{
+			color: black;		
+		}
+
+}
+	
+@media screen and (max-width: 899px) 
+{  
+
+	#central
+		{
+			background-color: #82c3a6;	
+			text-align: center;	
+		}
+
+	#central img 
+		{	
+			width: 90%;			
+			margin-top: 5%;
+			margin-bottom: 2.5%;
+		}
+
+	#secundaria
+		{
+			font-size: 80%;
+			background-color: #d5c75f;
+			border: 1px 1px 1px 1px;	
+			display: block;			
+		}
+
+	#secundaria nav
+		{
+			text-align: center;	
+			display: grid;
+		}
+
+	#secundaria a img
+		{
+			width: 90%;
+			margin-top: 10%;	
+			box-shadow: 2px 2px #82c3a6;			
+		}
+
+	#secundaria .paisaje img:hover
+		{
+			-webkit-transform: rotate(10deg); 			
+		}
+
+	#secundaria .retratos img:hover
+		{
+			-webkit-transform: translate(20px, -5px);
+		}
+
+
+	#secundaria nav a:link, #secundaria nav a:visited 
+		{
+			color: black;		
+		}
+
+	#secundaria a p
+	{
+		
+		margin-top: 0%;
+	}
+
+}	

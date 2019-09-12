@@ -1,0 +1,263 @@
+@font-face 
+{
+	font-family: DancingScript;
+	src: url(../fuentes/DancingScript-Regular.ttf);
+}
+
+body
+{		
+	margin: auto;	
+	font-size: 30px;		
+	font-family: DancingScript !important;		
+	animation-name: banner-animacion;
+	animation-duration: 2s;	
+}
+
+
+@keyframes banner-animacion 
+{
+
+	0% {
+		margin-top: 150%;
+	}
+
+	60% {
+		margin-top: -5%;		
+	}
+		
+	100% {
+		margin-top: 0%;		
+	}
+}
+
+/*Desktop*/
+@media screen and (min-width: 900px) 
+{  
+	#contenido
+	{
+		display: flex;	
+		flex-direction: column;	
+	}
+
+	#banner
+	{
+		background-color: #669999;		
+		display: flex;
+		flex-direction: row;
+	}
+
+	#titulo
+	{
+		color: white;	
+		text-shadow: 2px 2px  #02010a;	
+		font-size: 100%;
+		width: 70%;
+		margin-left: 2%;	
+	}
+
+	#menu
+	{
+		width: 30%;
+		margin: auto;
+		font-size: 70%;
+	}
+
+	#banner nav a:link, #banner nav a:visited 
+	{
+		color: #fff;	
+		padding: 2px .5em;		
+	}	
+
+	.active
+	{
+		text-decoration: none !important;
+
+	}
+
+	footer
+	{
+		background-color: #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	#pie
+	{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	#pie .contacto
+	{
+		width: 25%;
+		text-align: center;
+		font-size: 70%;
+		margin-top: 20px;
+	}
+
+	#pie .terminos
+	{
+		width: 25%;
+		text-align: center;
+		font-size: 70%;
+		margin-top: 20px;	
+	}
+
+	#pie .sociales
+	{
+		width: 25%;
+		text-align: center;
+		font-size: 70%;
+		margin-top: 20px;	
+	}
+
+	#pie .sociales nav img
+	{
+		width: 20px;
+		height: 20px;
+	}
+
+	#pie .derechos
+	{
+		width: 25%;
+		text-align: center;
+		font-size: 70%;
+		margin-top: 20px;	
+	}
+
+	#pie nav h1
+	{
+		margin: auto;	
+	}
+
+	#pie nav nav
+	{
+		font-size: 80%; 	
+	}
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 899px) 
+{  
+
+	#contenido
+	{
+		display: block;
+		/*flex-direction: column;	*/
+	}
+
+	#banner
+	{
+		background-color: #669999;		
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	#titulo
+	{
+		color: white;	
+		text-shadow: 2px 2px  #02010a;	
+		font-size: 160%;
+		width: 100%;				
+		text-align: center;			
+	}
+
+	#menu
+	{
+		text-align: center;
+		margin: auto;
+		font-size: 80%;		
+		margin-bottom: 8%;
+		margin-top: -5%;
+		width: 100%;
+	}
+
+	#banner nav a:link, #banner nav a:visited 
+	{
+		color: #fff;	
+		padding: 2px .5em;		
+	}	
+
+	.active
+	{
+		text-decoration: none !important;
+
+	}
+
+	footer
+	{
+		background-color: #C6d5c5;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	#pie
+	{
+		display: table;		
+		width: 100%;
+	}
+
+	#pie .contacto
+	{		
+		text-align: justify;
+		font-size: 80%;
+		margin-top: 10%;				
+		margin-right: 25%;
+    	margin-left: 25%;				
+	}
+
+	#pie .terminos
+	{		
+		text-align: justify;
+		font-size: 80%;
+		margin-top: 20px;	
+		margin-right: 25%;
+    	margin-left: 25%;				
+	}
+
+	#pie .sociales
+	{
+		text-align: justify;
+		font-size: 80%;
+		margin-top: 20px;
+		margin-right: 25%;
+    	margin-left: 25%;		
+	}
+
+	#pie .sociales nav img
+	{
+		width: 12px;
+		height: 12px;	
+	}
+
+	#pie .derechos
+	{
+		text-align: justify;
+		font-size: 80%;
+		margin-top: 20px;	
+		margin-right: 25%;
+    	margin-left: 25%;
+    	margin-bottom: 10%;				
+	}
+
+	#pie nav h1
+	{
+		margin: auto;	
+		width: 100%;
+	}
+
+	#pie nav nav
+	{		
+		font-size: 60%; 	
+		width: 100%;
+	}
+
+	#pie nav a:link, #pie nav a:visited 
+	{
+		color: black;				
+	}		
+
+}
+
+

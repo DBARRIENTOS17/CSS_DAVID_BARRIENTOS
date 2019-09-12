@@ -1,0 +1,86 @@
+.blur
+{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+.gray
+{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.sepia
+{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+@media screen and (min-width: 900px) 
+{
+
+	#paisajes
+	{
+		background-color: #d5c75f;
+		width: 100%;	
+	}
+
+	#paisajes nav
+	{
+		display: flex;
+		flex-direction: row;		
+	}
+
+	#paisajes nav nav
+	{
+		width: 33%;	
+		margin: auto;
+		margin-top: 2.5%;
+		margin-bottom: 2.5%;
+		margin-left: 5%;
+	}
+
+	#paisajes nav nav img
+	{
+		width: 80%;	
+	}
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 899px) 
+{
+
+	#paisajes
+	{
+		background-color: #d5c75f;
+		text-align: center;
+		width: 100%;	
+		display: block;
+	}
+
+	#paisajes nav
+	{
+		/*display: flex;
+		flex-direction: row;*/		
+	}
+
+	#paisajes nav nav
+	{
+		width: 100%;	
+		margin: auto;		
+		/*margin-left: 5%;*/
+	}
+
+	#paisajes nav nav img
+	{		
+		margin-bottom: 10%;
+		width: 80%;	
+	}
+
+	#paisajes nav nav .blur
+	{
+		margin-top: 10%;
+	}
+
+}
